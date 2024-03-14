@@ -11,7 +11,11 @@ class BottomBarWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Theme(
-      data: ThemeData(splashColor: Colors.transparent),
+      data: ThemeData(
+        splashColor: Colors.transparent,
+        highlightColor: Colors.transparent,
+        hoverColor: Colors.transparent,
+      ),
       child: StatefulBuilder(builder: (context, setState) {
         return BottomNavigationBar(
           type: BottomNavigationBarType.fixed,
