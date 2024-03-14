@@ -41,7 +41,7 @@ class PositionListWidget extends StatelessWidget {
                             style: TextStyle(
                                 fontSize: 18,
                                 fontWeight: FontWeight.normal,
-                                color: Colors.greenAccent),
+                                color: Color(0xFF00888C)),
                           )
                         ],
                       ),
