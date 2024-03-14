@@ -94,6 +94,7 @@ class PostionItemWidget extends StatelessWidget {
                     style: TextStyle(fontSize: 12, color: colorDark),
                   ),
                   IconButton(
+                    iconSize: 18,
                     color: colorDark,
                     onPressed: () {},
                     icon: Icon(Icons.close),
