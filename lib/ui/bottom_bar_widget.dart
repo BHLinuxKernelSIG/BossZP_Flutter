@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 
 class BottomBarWidget extends StatelessWidget {
-  const BottomBarWidget({
-    super.key,
-    required TabController tabController,
-  }) : _tabController = tabController;
+  final List<BottomNavigationBarItem> items;
+  const BottomBarWidget(
+      {super.key, required TabController tabController, required this.items})
+      : _tabController = tabController;
 
   final TabController _tabController;
 
@@ -21,14 +21,7 @@ class BottomBarWidget extends StatelessWidget {
           },
           currentIndex: _tabController.index,
           selectedItemColor: Colors.red[900],
-          items: [
-            BottomNavigationBarItem(
-                icon: Icon(Icons.favorite_rounded), label: "QR"),
-            BottomNavigationBarItem(
-                icon: Icon(Icons.baby_changing_station), label: "aa"),
-            BottomNavigationBarItem(
-                icon: Icon(Icons.add_business_rounded), label: "cc")
-          ],
+          items: items,
         );
       }),
     );

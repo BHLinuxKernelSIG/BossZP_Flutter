@@ -49,7 +49,14 @@ class MyHomePage extends StatefulWidget {
 
 class _MyHomePageState extends State<MyHomePage>
     with SingleTickerProviderStateMixin {
-  late final _tabController = TabController(length: 3, vsync: this);
+  late final _tabController = TabController(length: pages.length, vsync: this);
+
+  final List<Widget> pages = [Text("11"), Text("12"), Text("13")];
+  final List<BottomNavigationBarItem> bottomBars = [
+    BottomNavigationBarItem(icon: Icon(Icons.favorite_rounded), label: "QR1"),
+    BottomNavigationBarItem(icon: Icon(Icons.favorite_rounded), label: "QR2"),
+    BottomNavigationBarItem(icon: Icon(Icons.favorite_rounded), label: "QR3")
+  ];
 
   @override
   void dispose() {
@@ -64,23 +71,11 @@ class _MyHomePageState extends State<MyHomePage>
       appBar: AppBar(
         title: Text("aaaa---"),
       ),
-      body: TabBarView(controller: _tabController, children: [
-        Text("111"),
-        Text("aaaa==="),
-        Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
-            const Text(
-              'You have pushed the button this many times:',
-            ),
-            Text(
-              '---',
-              style: Theme.of(context).textTheme.headlineMedium,
-            ),
-          ],
-        ),
-      ]),
-      bottomNavigationBar: BottomBarWidget(tabController: _tabController),
+      body: TabBarView(controller: _tabController, children: pages),
+      bottomNavigationBar: BottomBarWidget(
+        tabController: _tabController,
+        items: bottomBars,
+      ),
     );
   }
 }
