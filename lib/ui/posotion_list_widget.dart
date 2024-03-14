@@ -68,6 +68,10 @@ class PositionListWidget extends StatelessWidget {
                             ),
                           )
                       ],
+                    ),
+                    SizedBox(height: 8),
+                    Row(
+                      children: [Icon(Icons.ac_unit_rounded)],
                     )
                   ],
                 ),
