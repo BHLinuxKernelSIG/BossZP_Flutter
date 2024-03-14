@@ -54,6 +54,8 @@ class PositionListWidget extends StatelessWidget {
                       SizedBox(height: 8),
                       Wrap(
                         direction: Axis.horizontal,
+                        runSpacing: 5,
+                        // runAlignment: WrapAlignment.end,
                         children: [
                           for (int i = 0; i < 5; i++)
                             Container(
