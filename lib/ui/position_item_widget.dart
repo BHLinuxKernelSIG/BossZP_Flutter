@@ -94,6 +94,9 @@ class PostionItemWidget extends StatelessWidget {
                     style: TextStyle(fontSize: 12, color: colorDark),
                   ),
                   IconButton(
+                    splashColor: Colors.transparent,
+                    highlightColor: Colors.transparent,
+                    padding: EdgeInsets.zero,
                     iconSize: 18,
                     color: colorDark,
                     onPressed: () {},
