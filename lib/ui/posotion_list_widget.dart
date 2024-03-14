@@ -57,13 +57,15 @@ class PositionListWidget extends StatelessWidget {
                         children: [
                           for (int i = 0; i < 5; i++)
                             Container(
-                              color: Color(0xFFF2F2F2),
+                              decoration: BoxDecoration(
+                                  color: Color(0xFFF2F2F2),
+                                  borderRadius: BorderRadius.circular(2)),
                               margin: EdgeInsets.fromLTRB(0, 0, 4, 0),
                               padding: EdgeInsets.fromLTRB(6, 3, 6, 3),
                               child: Text(
                                 "iii000i$i",
                                 style: TextStyle(
-                                    color: Colors.amber, fontSize: 12),
+                                    color: Colors.black54, fontSize: 12),
                               ),
                             )
                         ],
