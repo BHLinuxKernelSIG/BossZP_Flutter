@@ -15,25 +15,36 @@ class PositionListWidget extends StatelessWidget {
               elevation: 0.2,
               color: Colors.white24,
               child: Padding(
-                padding: const EdgeInsets.all(8.0),
+                padding: EdgeInsets.all(8.0),
                 child: Column(
                   children: [
-                    Row(
-                      children: [
-                        Text(
-                          "iOS开发工程师",
-                          style: TextStyle(
-                              fontSize: 18,
-                              fontWeight: FontWeight.bold,
-                              color: Colors.black),
-                        ),
-                        SizedBox(width: 5),
-                        Text(
-                          "20-25K",
-                          style: TextStyle(
-                              fontSize: 18, fontWeight: FontWeight.normal),
-                        )
-                      ],
+                    Container(
+                      color: Colors.green,
+                      child: Row(
+                        children: [
+                          Text(
+                            "iOS开发工程师程师程师程师程师程师程师---====",
+                            style: TextStyle(
+                                fontSize: 18,
+                                fontWeight: FontWeight.bold,
+                                color: Colors.black),
+                          ),
+                          SizedBox(width: 10),
+                          Expanded(
+                            child: Container(
+                              color: Colors.amber,
+                              child: Text(
+                                "20-25K",
+                                textAlign: TextAlign.end,
+                                style: TextStyle(
+                                    fontSize: 18,
+                                    fontWeight: FontWeight.normal,
+                                    color: Colors.greenAccent),
+                              ),
+                            ),
+                          )
+                        ],
+                      ),
                     )
                   ],
                 ),
