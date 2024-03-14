@@ -63,7 +63,11 @@ class _MyHomePageState extends State<MyHomePage>
       appBar: AppBar(
         title: Text("aaaa---"),
       ),
-      body: TabBarView(controller: _tabController, children: pages),
+      body: TabBarView(
+        controller: _tabController,
+        children: pages,
+        physics: NeverScrollableScrollPhysics(),
+      ),
       bottomNavigationBar: BottomBarWidget(
         tabController: _tabController,
         items: bottomBars,
