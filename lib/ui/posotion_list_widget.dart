@@ -33,16 +33,13 @@ class PositionListWidget extends StatelessWidget {
                             ),
                           ),
                           SizedBox(width: 10),
-                          Container(
-                            color: Colors.amber,
-                            child: Text(
-                              "20-25K",
-                              textAlign: TextAlign.end,
-                              style: TextStyle(
-                                  fontSize: 18,
-                                  fontWeight: FontWeight.normal,
-                                  color: Colors.greenAccent),
-                            ),
+                          Text(
+                            "20-25K",
+                            textAlign: TextAlign.end,
+                            style: TextStyle(
+                                fontSize: 18,
+                                fontWeight: FontWeight.normal,
+                                color: Colors.greenAccent),
                           )
                         ],
                       ),
