@@ -23,6 +23,8 @@ class BottomBarWidget extends StatelessWidget {
           currentIndex: _tabController.index,
           selectedItemColor: Color(0xFF35A7A9),
           unselectedItemColor: Color(0XFF909090),
+          selectedFontSize: 10,
+          unselectedFontSize: 10,
           items: items,
         );
       }),
