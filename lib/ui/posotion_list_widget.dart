@@ -22,25 +22,26 @@ class PositionListWidget extends StatelessWidget {
                       color: Colors.green,
                       child: Row(
                         children: [
-                          Text(
-                            "iOS开发工程师程师程师程师程师程师程师---====",
-                            style: TextStyle(
-                                fontSize: 18,
-                                fontWeight: FontWeight.bold,
-                                color: Colors.black),
+                          Expanded(
+                            child: Text(
+                              "iOS开发工程师程师程师程师程师程师程师---====",
+                              overflow: TextOverflow.ellipsis,
+                              style: TextStyle(
+                                  fontSize: 18,
+                                  fontWeight: FontWeight.bold,
+                                  color: Colors.black),
+                            ),
                           ),
                           SizedBox(width: 10),
-                          Expanded(
-                            child: Container(
-                              color: Colors.amber,
-                              child: Text(
-                                "20-25K",
-                                textAlign: TextAlign.end,
-                                style: TextStyle(
-                                    fontSize: 18,
-                                    fontWeight: FontWeight.normal,
-                                    color: Colors.greenAccent),
-                              ),
+                          Container(
+                            color: Colors.amber,
+                            child: Text(
+                              "20-25K",
+                              textAlign: TextAlign.end,
+                              style: TextStyle(
+                                  fontSize: 18,
+                                  fontWeight: FontWeight.normal,
+                                  color: Colors.greenAccent),
                             ),
                           )
                         ],
