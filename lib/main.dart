@@ -1,3 +1,4 @@
+import 'package:bosszp/ui/message_list_widget.dart';
 import 'package:bosszp/ui/posotion_list_widget.dart';
 import 'package:flutter/material.dart';
 
@@ -39,7 +40,7 @@ class _MyHomePageState extends State<MyHomePage>
   final List<Widget> pages = [
     PositionListWidget(),
     Text("12"),
-    Text("13"),
+    MessageListWidget(),
     Text("44")
   ];
   final List<BottomNavigationBarItem> bottomBars = [
