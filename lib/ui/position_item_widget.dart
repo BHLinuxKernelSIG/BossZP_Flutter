@@ -55,7 +55,7 @@ class PostionItemWidget extends StatelessWidget {
                 runSpacing: 5,
                 // runAlignment: WrapAlignment.end,
                 children: [
-                  for (int i = 0; i < 5; i++)
+                  for (int i = 0; i < 3; i++)
                     Container(
                       decoration: BoxDecoration(
                           color: Color(0xFFF2F2F2),
@@ -69,7 +69,6 @@ class PostionItemWidget extends StatelessWidget {
                     )
                 ],
               ),
-              SizedBox(height: 6),
               Row(
                 children: [
                   Icon(Icons.ac_unit_rounded),
