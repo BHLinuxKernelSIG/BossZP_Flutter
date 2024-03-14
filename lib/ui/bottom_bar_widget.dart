@@ -21,6 +21,7 @@ class BottomBarWidget extends StatelessWidget {
           },
           currentIndex: _tabController.index,
           selectedItemColor: Colors.red[900],
+          unselectedItemColor: Colors.grey,
           items: items,
         );
       }),

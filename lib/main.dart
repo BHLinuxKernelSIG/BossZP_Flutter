@@ -51,11 +51,13 @@ class _MyHomePageState extends State<MyHomePage>
     with SingleTickerProviderStateMixin {
   late final _tabController = TabController(length: pages.length, vsync: this);
 
-  final List<Widget> pages = [Text("11"), Text("12"), Text("13")];
+  final List<Widget> pages = [Text("11"), Text("12"), Text("13"), Text("44")];
   final List<BottomNavigationBarItem> bottomBars = [
-    BottomNavigationBarItem(icon: Icon(Icons.favorite_rounded), label: "QR1"),
-    BottomNavigationBarItem(icon: Icon(Icons.favorite_rounded), label: "QR2"),
-    BottomNavigationBarItem(icon: Icon(Icons.favorite_rounded), label: "QR3")
+    BottomNavigationBarItem(icon: Icon(Icons.face_2_outlined), label: "QR1"),
+    BottomNavigationBarItem(icon: Icon(Icons.ac_unit_rounded), label: "QR2"),
+    BottomNavigationBarItem(
+        icon: Icon(Icons.baby_changing_station_outlined), label: "QR4"),
+    BottomNavigationBarItem(icon: Icon(Icons.cabin_outlined), label: "QR4")
   ];
 
   @override
