@@ -13,7 +13,6 @@ class PostionItemWidget extends StatelessWidget {
         margin: EdgeInsets.only(left: 10, right: 10, top: 14, bottom: 0),
         elevation: 0.2,
         color: Colors.white,
-        // surfaceTintColor: Colors.green,
         child: Padding(
           padding: EdgeInsets.fromLTRB(10, 15, 10, 15),
           child: Column(
