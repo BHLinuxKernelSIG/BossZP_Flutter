@@ -5,6 +5,18 @@ class MessageItemWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Row(
+      children: [
+        Image(image: NetworkImage("")),
+        Column(
+          children: [
+            Row(
+              children: [Text("data"), Text("data")],
+            ),
+            Text("data")
+          ],
+        )
+      ],
+    );
   }
 }
