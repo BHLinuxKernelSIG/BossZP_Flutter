@@ -46,11 +46,28 @@ class PositionListWidget extends StatelessWidget {
                           )
                         ],
                       ),
-                      SizedBox(height: 10),
+                      SizedBox(height: 8),
                       Text(
                         "腾讯 不需要融资 1000人以上",
                         style: TextStyle(fontSize: 14, color: Colors.black54),
                       ),
+                      SizedBox(height: 8),
+                      Wrap(
+                        direction: Axis.horizontal,
+                        children: [
+                          for (int i = 0; i < 5; i++)
+                            Container(
+                              color: Color(0xFFF2F2F2),
+                              margin: EdgeInsets.fromLTRB(0, 0, 4, 0),
+                              padding: EdgeInsets.fromLTRB(6, 3, 6, 3),
+                              child: Text(
+                                "iii000i$i",
+                                style: TextStyle(
+                                    color: Colors.amber, fontSize: 12),
+                              ),
+                            )
+                        ],
+                      )
                     ],
                   ),
                 ),
