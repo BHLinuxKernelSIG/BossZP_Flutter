@@ -66,9 +66,24 @@ class PostionItemWidget extends StatelessWidget {
                     )
                 ],
               ),
-              SizedBox(height: 8),
+              SizedBox(height: 12),
               Row(
-                children: [Icon(Icons.ac_unit_rounded)],
+                children: [
+                  Icon(Icons.ac_unit_rounded),
+                  Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text(
+                        "张先生 - 人事总监",
+                        style: TextStyle(fontSize: 12, color: Colors.black87),
+                      ),
+                      Text(
+                        "今日回复4次",
+                        style: TextStyle(fontSize: 12, color: Colors.black54),
+                      )
+                    ],
+                  )
+                ],
               )
             ],
           ),
