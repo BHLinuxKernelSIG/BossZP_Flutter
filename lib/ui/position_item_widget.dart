@@ -1,3 +1,5 @@
+import 'dart:math';
+
 import 'package:flutter/material.dart';
 
 class PostionItemWidget extends StatelessWidget {
@@ -78,10 +80,11 @@ class PostionItemWidget extends StatelessWidget {
                         "张先生 - 人事总监",
                         style: TextStyle(fontSize: 12, color: Colors.black87),
                       ),
-                      Text(
-                        "今日回复4次",
-                        style: TextStyle(fontSize: 12, color: Colors.black54),
-                      )
+                      if (Random().nextBool())
+                        Text(
+                          "今日回复4次",
+                          style: TextStyle(fontSize: 12, color: Colors.black54),
+                        )
                     ],
                   )
                 ],
