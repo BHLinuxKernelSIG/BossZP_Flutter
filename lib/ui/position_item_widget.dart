@@ -17,7 +17,7 @@ class PostionItemWidget extends StatelessWidget {
         elevation: 0.2,
         color: Colors.white,
         child: Padding(
-          padding: EdgeInsets.fromLTRB(10, 12, 10, 12),
+          padding: EdgeInsets.fromLTRB(10, 12, 10, 10),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
