@@ -9,6 +9,7 @@ class PostionItemWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    var colorDark = Colors.black54;
     return Container(
       color: Color(0xFFF2F2F4),
       child: Card(
@@ -46,7 +47,7 @@ class PostionItemWidget extends StatelessWidget {
               SizedBox(height: 8),
               Text(
                 "腾讯 不需要融资 1000人以上",
-                style: TextStyle(fontSize: 14, color: Colors.black54),
+                style: TextStyle(fontSize: 14, color: colorDark),
               ),
               SizedBox(height: 8),
               Wrap(
@@ -63,7 +64,7 @@ class PostionItemWidget extends StatelessWidget {
                       padding: EdgeInsets.fromLTRB(6, 3, 6, 3),
                       child: Text(
                         "iii000i$i",
-                        style: TextStyle(color: Colors.black54, fontSize: 12),
+                        style: TextStyle(color: colorDark, fontSize: 12),
                       ),
                     )
                 ],
@@ -83,15 +84,20 @@ class PostionItemWidget extends StatelessWidget {
                       if (Random().nextBool())
                         Text(
                           "今日回复4次",
-                          style: TextStyle(fontSize: 12, color: Colors.black54),
+                          style: TextStyle(fontSize: 12, color: colorDark),
                         )
                     ],
                   ),
                   Spacer(),
                   Text(
                     "东城区 - 建国门",
-                    style: TextStyle(fontSize: 12, color: Colors.black54),
+                    style: TextStyle(fontSize: 12, color: colorDark),
                   ),
+                  IconButton(
+                    color: colorDark,
+                    onPressed: () {},
+                    icon: Icon(Icons.close),
+                  )
                 ],
               )
             ],
