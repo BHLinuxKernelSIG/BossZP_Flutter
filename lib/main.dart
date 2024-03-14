@@ -1,3 +1,4 @@
+import 'package:bosszp/ui/posotion_list_widget.dart';
 import 'package:flutter/material.dart';
 
 import 'ui/bottom_bar_widget.dart';
@@ -51,7 +52,12 @@ class _MyHomePageState extends State<MyHomePage>
     with SingleTickerProviderStateMixin {
   late final _tabController = TabController(length: pages.length, vsync: this);
 
-  final List<Widget> pages = [Text("11"), Text("12"), Text("13"), Text("44")];
+  final List<Widget> pages = [
+    PositionListWidget(),
+    Text("12"),
+    Text("13"),
+    Text("44")
+  ];
   final List<BottomNavigationBarItem> bottomBars = [
     BottomNavigationBarItem(icon: Icon(Icons.face_2_outlined), label: "职位"),
     BottomNavigationBarItem(icon: Icon(Icons.ac_unit_rounded), label: "有了"),
