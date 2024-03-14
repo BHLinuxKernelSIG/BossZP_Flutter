@@ -15,7 +15,7 @@ class PositionListWidget extends StatelessWidget {
               elevation: 0.2,
               color: Colors.white24,
               child: Padding(
-                padding: EdgeInsets.all(8.0),
+                padding: EdgeInsets.fromLTRB(10, 15, 10, 15),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
@@ -28,7 +28,7 @@ class PositionListWidget extends StatelessWidget {
                             style: TextStyle(
                                 fontSize: 18,
                                 fontWeight: FontWeight.bold,
-                                color: Colors.black),
+                                color: Colors.black87),
                           ),
                         ),
                         SizedBox(width: 10),
@@ -45,7 +45,7 @@ class PositionListWidget extends StatelessWidget {
                     SizedBox(height: 10),
                     Text(
                       "腾讯 不需要融资 1000人以上",
-                      style: TextStyle(fontSize: 14, color: Colors.black),
+                      style: TextStyle(fontSize: 14, color: Colors.black54),
                     ),
                   ],
                 ),
