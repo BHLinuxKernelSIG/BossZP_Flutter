@@ -17,12 +17,13 @@ class PositionListWidget extends StatelessWidget {
               child: Padding(
                 padding: EdgeInsets.all(8.0),
                 child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Row(
                       children: [
                         Expanded(
                           child: Text(
-                            "iOS开发工程师程师程师程师程师程师程师---====",
+                            "iOS开发工程师",
                             overflow: TextOverflow.ellipsis,
                             style: TextStyle(
                                 fontSize: 18,
@@ -40,7 +41,12 @@ class PositionListWidget extends StatelessWidget {
                               color: Colors.greenAccent),
                         )
                       ],
-                    )
+                    ),
+                    SizedBox(height: 10),
+                    Text(
+                      "腾讯 不需要融资 1000人以上",
+                      style: TextStyle(fontSize: 14, color: Colors.black),
+                    ),
                   ],
                 ),
               ),
