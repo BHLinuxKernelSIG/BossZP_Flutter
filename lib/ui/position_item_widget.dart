@@ -70,6 +70,7 @@ class PostionItemWidget extends StatelessWidget {
               Row(
                 children: [
                   Icon(Icons.ac_unit_rounded),
+                  SizedBox(width: 6),
                   Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
