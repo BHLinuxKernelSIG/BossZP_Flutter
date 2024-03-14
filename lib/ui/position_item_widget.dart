@@ -86,7 +86,12 @@ class PostionItemWidget extends StatelessWidget {
                           style: TextStyle(fontSize: 12, color: Colors.black54),
                         )
                     ],
-                  )
+                  ),
+                  Spacer(),
+                  Text(
+                    "东城区 - 建国门",
+                    style: TextStyle(fontSize: 12, color: Colors.black87),
+                  ),
                 ],
               )
             ],
