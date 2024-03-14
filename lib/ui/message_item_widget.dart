@@ -12,8 +12,9 @@ class MessageItemWidget extends StatelessWidget {
           ClipRRect(
             borderRadius: BorderRadius.circular(22),
             child: Icon(
-              Icons.card_membership_outlined,
+              Icons.calendar_month_sharp,
               size: 44,
+              color: Colors.amberAccent,
             ),
           ),
           SizedBox(width: 6),
