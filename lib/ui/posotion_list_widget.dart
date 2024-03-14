@@ -18,31 +18,28 @@ class PositionListWidget extends StatelessWidget {
                 padding: EdgeInsets.all(8.0),
                 child: Column(
                   children: [
-                    Container(
-                      color: Colors.green,
-                      child: Row(
-                        children: [
-                          Expanded(
-                            child: Text(
-                              "iOS开发工程师程师程师程师程师程师程师---====",
-                              overflow: TextOverflow.ellipsis,
-                              style: TextStyle(
-                                  fontSize: 18,
-                                  fontWeight: FontWeight.bold,
-                                  color: Colors.black),
-                            ),
-                          ),
-                          SizedBox(width: 10),
-                          Text(
-                            "20-25K",
-                            textAlign: TextAlign.end,
+                    Row(
+                      children: [
+                        Expanded(
+                          child: Text(
+                            "iOS开发工程师程师程师程师程师程师程师---====",
+                            overflow: TextOverflow.ellipsis,
                             style: TextStyle(
                                 fontSize: 18,
-                                fontWeight: FontWeight.normal,
-                                color: Colors.greenAccent),
-                          )
-                        ],
-                      ),
+                                fontWeight: FontWeight.bold,
+                                color: Colors.black),
+                          ),
+                        ),
+                        SizedBox(width: 10),
+                        Text(
+                          "20-25K",
+                          textAlign: TextAlign.end,
+                          style: TextStyle(
+                              fontSize: 18,
+                              fontWeight: FontWeight.normal,
+                              color: Colors.greenAccent),
+                        )
+                      ],
                     )
                   ],
                 ),
