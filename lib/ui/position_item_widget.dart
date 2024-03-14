@@ -44,12 +44,12 @@ class PostionItemWidget extends StatelessWidget {
                   )
                 ],
               ),
-              SizedBox(height: 8),
+              SizedBox(height: 6),
               Text(
                 "腾讯 不需要融资 1000人以上",
                 style: TextStyle(fontSize: 12, color: colorDark),
               ),
-              SizedBox(height: 8),
+              SizedBox(height: 6),
               Wrap(
                 direction: Axis.horizontal,
                 runSpacing: 5,
@@ -69,7 +69,7 @@ class PostionItemWidget extends StatelessWidget {
                     )
                 ],
               ),
-              SizedBox(height: 8),
+              SizedBox(height: 6),
               Row(
                 children: [
                   Icon(Icons.ac_unit_rounded),
