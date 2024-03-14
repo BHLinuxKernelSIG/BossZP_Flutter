@@ -13,7 +13,8 @@ class PositionListWidget extends StatelessWidget {
             child: Container(
               color: Color(0xFFF2F2F4),
               child: Card(
-                margin: EdgeInsets.only(left: 6, right: 6, top: 0, bottom: 6),
+                margin:
+                    EdgeInsets.only(left: 10, right: 10, top: 14, bottom: 0),
                 elevation: 0.2,
                 color: Colors.white,
                 // surfaceTintColor: Colors.green,
