@@ -21,7 +21,7 @@ class MessageItemWidget extends StatelessWidget {
           Expanded(
             child: Container(
               child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
+                crossAxisAlignment: CrossAxisAlignment.stretch,
                 mainAxisSize: MainAxisSize.max,
                 children: [
                   Row(
@@ -56,13 +56,19 @@ class MessageItemWidget extends StatelessWidget {
                     ],
                   ),
                   SizedBox(height: 3),
-                  Text.rich(
-                    TextSpan(text: "[已读] ", children: [
-                      TextSpan(
-                          text: "嗯，好的",
-                          style: TextStyle(color: Color(0xFF595959)))
-                    ]),
-                    style: TextStyle(color: Color(0xFFB8B8B8), fontSize: 14),
+                  Container(
+                    color: Colors.amberAccent,
+                    child: Text.rich(
+                        TextSpan(text: "[已读] ", children: [
+                          TextSpan(
+                              text: "嗯，好的--=-==--=-=-=//poppk00",
+                              style: TextStyle(color: Color(0xFF595959)))
+                        ]),
+                        style: TextStyle(
+                          color: Color(0xFFB8B8B8),
+                          fontSize: 14,
+                        ),
+                        maxLines: 1),
                   )
                 ],
               ),
