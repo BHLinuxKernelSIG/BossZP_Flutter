@@ -14,6 +14,7 @@ class BottomBarWidget extends StatelessWidget {
       data: ThemeData(splashColor: Colors.transparent),
       child: StatefulBuilder(builder: (context, setState) {
         return BottomNavigationBar(
+          type: BottomNavigationBarType.fixed,
           onTap: (index) {
             setState(() {
               _tabController.animateTo(index);
