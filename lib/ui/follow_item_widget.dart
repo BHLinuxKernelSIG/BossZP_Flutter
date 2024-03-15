@@ -95,7 +95,7 @@ class _PersonInfoWidget extends StatelessWidget {
         Text(
           "张先生 - 人事总监",
           style: TextStyle(
-              fontSize: 12, fontWeight: FontWeight.w600, color: Colors.black87),
+              fontSize: 13, fontWeight: FontWeight.w600, color: Colors.black87),
         ),
         if (Random().nextBool())
           Text(
