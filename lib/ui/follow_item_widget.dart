@@ -4,7 +4,9 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
 class Follow_Item_Widget extends StatelessWidget {
-  const Follow_Item_Widget({super.key});
+  const Follow_Item_Widget({super.key, this.answeredQuestion});
+
+  final String? answeredQuestion;
 
   @override
   Widget build(BuildContext context) {
@@ -32,12 +34,14 @@ class Follow_Item_Widget extends StatelessWidget {
                   TextButton(onPressed: () {}, child: Text("..."))
                 ],
               ),
-              SizedBox(height: 6),
-              Text(
-                "回答了问题",
-                style: TextStyle(
-                    fontSize: 12, color: context.read<Appearance>().darkColor),
-              ),
+              if (answeredQuestion != null) SizedBox(height: 6),
+              if (answeredQuestion != null)
+                Text(
+                  "回答了问题",
+                  style: TextStyle(
+                      fontSize: 12,
+                      color: context.read<Appearance>().darkColor),
+                ),
               SizedBox(height: 8),
               Text.rich(
                 TextSpan(
