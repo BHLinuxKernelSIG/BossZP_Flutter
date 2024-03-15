@@ -17,6 +17,7 @@ class Follow_Item_Widget extends StatelessWidget {
         child: Padding(
           padding: EdgeInsets.fromLTRB(8, 12, 8, 12),
           child: Column(
+            crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [
               Row(
                 crossAxisAlignment: CrossAxisAlignment.center,
@@ -28,11 +29,42 @@ class Follow_Item_Widget extends StatelessWidget {
                   ElevatedButton(onPressed: () {}, child: Text("关注")),
                   TextButton(onPressed: () {}, child: Text("..."))
                 ],
+              ),
+              Text.rich(
+                TextSpan(
+                    text:
+                        "面试岗位:：移动开发——iOS\n面试题目：谈谈Block与函数的区别？\n回答参考：Block可以写在方法里面",
+                    children: []),
+                textAlign: TextAlign.start,
+              ),
+              SizedBox(height: 10),
+              Row(
+                children: [
+                  _IconTextWIdget(),
+                  Spacer(),
+                  _IconTextWIdget(),
+                  Spacer(),
+                  _IconTextWIdget()
+                ],
               )
             ],
           ),
         ),
       ),
     );
+  }
+}
+
+class _IconTextWIdget extends StatelessWidget {
+  const _IconTextWIdget({
+    super.key,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return TextButton.icon(
+        onPressed: () {},
+        icon: Icon(Icons.access_alarm_outlined),
+        label: Text("426"));
   }
 }
