@@ -6,7 +6,7 @@ class MessageItemWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.fromLTRB(15, 10, 15, 10),
+      padding: const EdgeInsets.fromLTRB(15, 8, 15, 8),
       child: Row(
         children: [
           SizedBox(width: 6),
