@@ -32,6 +32,11 @@ class Follow_Item_Widget extends StatelessWidget {
                   SizedBox(width: 8),
                   ElevatedButton(
                       onPressed: () {},
+                      style: ButtonStyle(
+                          backgroundColor:
+                              MaterialStatePropertyAll(Colors.white),
+                          overlayColor:
+                              MaterialStatePropertyAll(Colors.transparent)),
                       child: Text(
                         "关注",
                         style: TextStyle(
