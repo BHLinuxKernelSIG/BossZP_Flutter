@@ -37,7 +37,7 @@ class Follow_Item_Widget extends StatelessWidget {
               if (answeredQuestion != null) SizedBox(height: 6),
               if (answeredQuestion != null)
                 Text(
-                  "回答了问题",
+                  answeredQuestion!,
                   style: TextStyle(
                       fontSize: 12,
                       color: context.read<Appearance>().darkColor),
