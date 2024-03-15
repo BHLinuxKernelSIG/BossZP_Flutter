@@ -8,14 +8,26 @@ class Follow_Item_Widget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      children: [
-        Row(
-          children: [
-            PersonInfoWidget(colorDark: context.read<Appearance>().darkColor)
-          ],
-        )
-      ],
+    return Container(
+      color: Color(0xFFF2F2F2),
+      child: Card(
+        color: Colors.white,
+        margin: EdgeInsets.fromLTRB(15, 5, 15, 5),
+        elevation: 0.5,
+        child: Padding(
+          padding: EdgeInsets.fromLTRB(8, 12, 8, 12),
+          child: Column(
+            children: [
+              Row(
+                children: [
+                  PersonInfoWidget(
+                      colorDark: context.read<Appearance>().darkColor)
+                ],
+              )
+            ],
+          ),
+        ),
+      ),
     );
   }
 }
