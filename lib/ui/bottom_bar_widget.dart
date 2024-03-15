@@ -1,4 +1,6 @@
+import 'package:bosszp/model/Appearance.dart';
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
 
 class BottomBarWidget extends StatelessWidget {
   final List<BottomNavigationBarItem> items;
@@ -25,8 +27,8 @@ class BottomBarWidget extends StatelessWidget {
             });
           },
           currentIndex: _tabController.index,
-          selectedItemColor: Color(0xFF35A7A9),
-          unselectedItemColor: Color(0XFF909090),
+          selectedItemColor: context.read<Appearance>().blueColor,
+          unselectedItemColor: Color.fromARGB(255, 6, 5, 5),
           selectedFontSize: 10,
           unselectedFontSize: 10,
           items: items,

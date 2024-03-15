@@ -42,7 +42,7 @@ class PostionItemWidget extends StatelessWidget {
                     style: TextStyle(
                         fontSize: 16,
                         fontWeight: FontWeight.normal,
-                        color: Color(0xFF00888C)),
+                        color: context.read<Appearance>().blueColor),
                   )
                 ],
               ),
@@ -55,7 +55,6 @@ class PostionItemWidget extends StatelessWidget {
               Wrap(
                 direction: Axis.horizontal,
                 runSpacing: 5,
-                // runAlignment: WrapAlignment.end,
                 children: [
                   for (int i = 0; i < 3; i++)
                     Container(
