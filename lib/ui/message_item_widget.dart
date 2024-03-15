@@ -58,6 +58,7 @@ class MessageItemWidget extends StatelessWidget {
                         color: Color(0xFFB8B8B8),
                         fontSize: 13,
                       ),
+                      overflow: TextOverflow.ellipsis,
                       maxLines: 1)
                 ],
               ),
