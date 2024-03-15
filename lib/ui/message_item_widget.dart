@@ -9,14 +9,6 @@ class MessageItemWidget extends StatelessWidget {
       padding: const EdgeInsets.fromLTRB(15, 10, 15, 10),
       child: Row(
         children: [
-          ClipRRect(
-            borderRadius: BorderRadius.circular(22),
-            child: Icon(
-              Icons.calendar_month_sharp,
-              size: 44,
-              color: Colors.amberAccent,
-            ),
-          ),
           SizedBox(width: 6),
           Expanded(
             child: Container(
@@ -56,20 +48,17 @@ class MessageItemWidget extends StatelessWidget {
                     ],
                   ),
                   SizedBox(height: 3),
-                  Container(
-                    color: Colors.amberAccent,
-                    child: Text.rich(
-                        TextSpan(text: "[已读] ", children: [
-                          TextSpan(
-                              text: "嗯，好的--=-==--=-=-=//poppk00",
-                              style: TextStyle(color: Color(0xFF595959)))
-                        ]),
-                        style: TextStyle(
-                          color: Color(0xFFB8B8B8),
-                          fontSize: 14,
-                        ),
-                        maxLines: 1),
-                  )
+                  Text.rich(
+                      TextSpan(text: "[已读] ", children: [
+                        TextSpan(
+                            text: "嗯，好的--=-==--=-=-=//poppk00",
+                            style: TextStyle(color: Color(0xFF595959)))
+                      ]),
+                      style: TextStyle(
+                        color: Color(0xFFB8B8B8),
+                        fontSize: 14,
+                      ),
+                      maxLines: 1)
                 ],
               ),
             ),
