@@ -24,7 +24,7 @@ class MessageItemWidget extends StatelessWidget {
                         style: TextStyle(
                             fontSize: 15,
                             fontWeight: FontWeight.normal,
-                            color: Colors.black54),
+                            color: Color(0XFF2B2B2B)),
                       ),
                       SizedBox(width: 8),
                       Text(
@@ -33,7 +33,7 @@ class MessageItemWidget extends StatelessWidget {
                         style: TextStyle(
                             fontSize: 12,
                             fontWeight: FontWeight.normal,
-                            color: Color(0xFF909090)),
+                            color: Color(0xFF969696)),
                       ),
                       Spacer(),
                       Text(
@@ -52,7 +52,7 @@ class MessageItemWidget extends StatelessWidget {
                       TextSpan(text: "[已读] ", children: [
                         TextSpan(
                             text: "嗯，好的",
-                            style: TextStyle(color: Colors.black54))
+                            style: TextStyle(color: Color(0XFF636363)))
                       ]),
                       style: TextStyle(
                         color: Color(0xFFB8B8B8),
