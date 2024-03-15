@@ -19,9 +19,14 @@ class Follow_Item_Widget extends StatelessWidget {
           child: Column(
             children: [
               Row(
+                crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
                   PersonInfoWidget(
-                      colorDark: context.read<Appearance>().darkColor)
+                      colorDark: context.read<Appearance>().darkColor),
+                  Spacer(),
+                  SizedBox(width: 8),
+                  ElevatedButton(onPressed: () {}, child: Text("关注")),
+                  TextButton(onPressed: () {}, child: Text("..."))
                 ],
               )
             ],
