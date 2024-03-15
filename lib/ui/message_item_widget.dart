@@ -1,19 +1,27 @@
 import 'package:flutter/material.dart';
+import 'package:cached_network_image/cached_network_image.dart';
 
 class MessageItemWidget extends StatelessWidget {
   const MessageItemWidget({super.key});
 
   @override
   Widget build(BuildContext context) {
+    final avatarWidth = 44.0;
     return Padding(
       padding: const EdgeInsets.fromLTRB(15, 8, 15, 8),
       child: Row(
         children: [
-          CachedNetworkImage(
-            placeholder: (context, url) => const CircularProgressIndicator(),
-            imageUrl: 'https://picsum.photos/250?image=9',
+          ClipRRect(
+            borderRadius: BorderRadius.circular(avatarWidth / 2),
+            child: CachedNetworkImage(
+              width: avatarWidth,
+              height: avatarWidth,
+              fit: BoxFit.cover,
+              placeholder: (context, url) => const CircularProgressIndicator(),
+              imageUrl: 'https://picsum.photos/250?image=9',
+            ),
           ),
-          SizedBox(width: 6),
+          SizedBox(width: 12),
           Expanded(
             child: Container(
               child: Column(
