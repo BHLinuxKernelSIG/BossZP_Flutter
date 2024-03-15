@@ -75,7 +75,7 @@ class PostionItemWidget extends StatelessWidget {
                 children: [
                   Icon(Icons.ac_unit_rounded),
                   SizedBox(width: 6),
-                  PersonInfoWidget(colorDark: colorDark),
+                  _PersonInfoWidget(colorDark: colorDark),
                   Spacer(),
                   Text(
                     "东城区 - 建国门",
@@ -100,8 +100,8 @@ class PostionItemWidget extends StatelessWidget {
   }
 }
 
-class PersonInfoWidget extends StatelessWidget {
-  const PersonInfoWidget({
+class _PersonInfoWidget extends StatelessWidget {
+  const _PersonInfoWidget({
     super.key,
     required this.colorDark,
   });

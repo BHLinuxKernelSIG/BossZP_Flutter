@@ -1,5 +1,5 @@
+import 'dart:math';
 import 'package:bosszp/model/Appearance.dart';
-import 'package:bosszp/ui/position_item_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
@@ -24,7 +24,7 @@ class Follow_Item_Widget extends StatelessWidget {
                 children: [
                   Icon(Icons.ac_unit_sharp),
                   SizedBox(width: 6),
-                  PersonInfoWidget(
+                  _PersonInfoWidget(
                       colorDark: context.read<Appearance>().darkColor),
                   Spacer(),
                   SizedBox(width: 8),
@@ -76,5 +76,33 @@ class _IconTextWIdget extends StatelessWidget {
           "426",
           style: TextStyle(fontSize: 12, color: color),
         ));
+  }
+}
+
+class _PersonInfoWidget extends StatelessWidget {
+  const _PersonInfoWidget({
+    super.key,
+    required this.colorDark,
+  });
+
+  final Color colorDark;
+
+  @override
+  Widget build(BuildContext context) {
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        Text(
+          "张先生 - 人事总监",
+          style: TextStyle(
+              fontSize: 12, fontWeight: FontWeight.w600, color: Colors.black87),
+        ),
+        if (Random().nextBool())
+          Text(
+            "今日回复4次",
+            style: TextStyle(fontSize: 10, color: colorDark),
+          )
+      ],
+    );
   }
 }
