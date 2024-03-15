@@ -56,7 +56,7 @@ class MessageItemWidget extends StatelessWidget {
                       ]),
                       style: TextStyle(
                         color: Color(0xFFB8B8B8),
-                        fontSize: 14,
+                        fontSize: 13,
                       ),
                       maxLines: 1)
                 ],
