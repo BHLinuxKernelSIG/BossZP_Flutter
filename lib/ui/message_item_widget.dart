@@ -18,7 +18,8 @@ class MessageItemWidget extends StatelessWidget {
               height: avatarWidth,
               fit: BoxFit.cover,
               placeholder: (context, url) => const CircularProgressIndicator(),
-              imageUrl: 'https://picsum.photos/250?image=9',
+              imageUrl:
+                  'https://pic1.zhimg.com/v2-4143b2f8dc88788df8ae311d2d1404f9_xll.jpg',
             ),
           ),
           SizedBox(width: 12),
