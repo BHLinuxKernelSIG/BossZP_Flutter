@@ -73,20 +73,7 @@ class PostionItemWidget extends StatelessWidget {
                 children: [
                   Icon(Icons.ac_unit_rounded),
                   SizedBox(width: 6),
-                  Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Text(
-                        "张先生 - 人事总监",
-                        style: TextStyle(fontSize: 10, color: Colors.black87),
-                      ),
-                      if (Random().nextBool())
-                        Text(
-                          "今日回复4次",
-                          style: TextStyle(fontSize: 10, color: colorDark),
-                        )
-                    ],
-                  ),
+                  PersonInfoWidget(colorDark: colorDark),
                   Spacer(),
                   Text(
                     "东城区 - 建国门",
@@ -107,6 +94,33 @@ class PostionItemWidget extends StatelessWidget {
           ),
         ),
       ),
+    );
+  }
+}
+
+class PersonInfoWidget extends StatelessWidget {
+  const PersonInfoWidget({
+    super.key,
+    required this.colorDark,
+  });
+
+  final Color colorDark;
+
+  @override
+  Widget build(BuildContext context) {
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        Text(
+          "张先生 - 人事总监",
+          style: TextStyle(fontSize: 10, color: Colors.black87),
+        ),
+        if (Random().nextBool())
+          Text(
+            "今日回复4次",
+            style: TextStyle(fontSize: 10, color: colorDark),
+          )
+      ],
     );
   }
 }
