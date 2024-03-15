@@ -10,6 +10,7 @@ class Follow_Item_Widget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final appearance = context.read<Appearance>();
     return Container(
       color: Color(0xFFF2F2F2),
       child: Card(
@@ -26,11 +27,16 @@ class Follow_Item_Widget extends StatelessWidget {
                 children: [
                   Icon(Icons.ac_unit_sharp),
                   SizedBox(width: 6),
-                  _PersonInfoWidget(
-                      colorDark: context.read<Appearance>().darkColor),
+                  _PersonInfoWidget(colorDark: appearance.darkColor),
                   Spacer(),
                   SizedBox(width: 8),
-                  ElevatedButton(onPressed: () {}, child: Text("关注")),
+                  ElevatedButton(
+                      onPressed: () {},
+                      child: Text(
+                        "关注",
+                        style: TextStyle(
+                            color: appearance.blueColor, fontSize: 12),
+                      )),
                   TextButton(onPressed: () {}, child: Text("..."))
                 ],
               ),
