@@ -9,6 +9,10 @@ class MessageItemWidget extends StatelessWidget {
       padding: const EdgeInsets.fromLTRB(15, 8, 15, 8),
       child: Row(
         children: [
+          CachedNetworkImage(
+            placeholder: (context, url) => const CircularProgressIndicator(),
+            imageUrl: 'https://picsum.photos/250?image=9',
+          ),
           SizedBox(width: 6),
           Expanded(
             child: Container(
