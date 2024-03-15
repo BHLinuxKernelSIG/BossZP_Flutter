@@ -40,7 +40,7 @@ class MessageItemWidget extends StatelessWidget {
                         "15:09",
                         textAlign: TextAlign.end,
                         style: TextStyle(
-                            fontSize: 12,
+                            fontSize: 11,
                             fontWeight: FontWeight.normal,
                             color: Color(0xFFB8B8B8)),
                       ),
