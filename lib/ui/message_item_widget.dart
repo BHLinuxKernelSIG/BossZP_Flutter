@@ -51,7 +51,7 @@ class MessageItemWidget extends StatelessWidget {
                   Text.rich(
                       TextSpan(text: "[已读] ", children: [
                         TextSpan(
-                            text: "嗯，好的",
+                            text: "嗯，好的，收到了，稍后给给您回复消息，耐心等候一下哈",
                             style: TextStyle(color: Color(0XFF636363)))
                       ]),
                       style: TextStyle(
