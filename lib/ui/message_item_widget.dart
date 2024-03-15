@@ -22,16 +22,16 @@ class MessageItemWidget extends StatelessWidget {
                         "李女士",
                         textAlign: TextAlign.end,
                         style: TextStyle(
-                            fontSize: 16,
+                            fontSize: 15,
                             fontWeight: FontWeight.normal,
-                            color: Color(0XFF1E1E1E)),
+                            color: Colors.black54),
                       ),
                       SizedBox(width: 8),
                       Text(
                         "bibili-HRM",
                         textAlign: TextAlign.end,
                         style: TextStyle(
-                            fontSize: 14,
+                            fontSize: 12,
                             fontWeight: FontWeight.normal,
                             color: Color(0xFF909090)),
                       ),
