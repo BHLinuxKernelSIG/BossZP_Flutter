@@ -32,7 +32,13 @@ class Follow_Item_Widget extends StatelessWidget {
                   TextButton(onPressed: () {}, child: Text("..."))
                 ],
               ),
-              SizedBox(height: 10),
+              SizedBox(height: 6),
+              Text(
+                "回答了问题",
+                style: TextStyle(
+                    fontSize: 12, color: context.read<Appearance>().darkColor),
+              ),
+              SizedBox(height: 8),
               Text.rich(
                 TextSpan(
                     text:
