@@ -22,6 +22,8 @@ class Follow_Item_Widget extends StatelessWidget {
               Row(
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
+                  Icon(Icons.ac_unit_sharp),
+                  SizedBox(width: 6),
                   PersonInfoWidget(
                       colorDark: context.read<Appearance>().darkColor),
                   Spacer(),
