@@ -1,7 +1,9 @@
+import 'package:bosszp/model/Appearance.dart';
 import 'package:bosszp/ui/follow_list_widget.dart';
 import 'package:bosszp/ui/message_list_widget.dart';
 import 'package:bosszp/ui/posotion_list_widget.dart';
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
 
 import 'ui/bottom_bar_widget.dart';
 
@@ -61,18 +63,21 @@ class _MyHomePageState extends State<MyHomePage>
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text("aaaa---"),
-      ),
-      body: TabBarView(
-        controller: _tabController,
-        children: pages,
-        physics: NeverScrollableScrollPhysics(),
-      ),
-      bottomNavigationBar: BottomBarWidget(
-        tabController: _tabController,
-        items: bottomBars,
+    return Provider<Appearance>(
+      create: (context) => Appearance(),
+      child: Scaffold(
+        appBar: AppBar(
+          title: Text("aaaa---"),
+        ),
+        body: TabBarView(
+          controller: _tabController,
+          children: pages,
+          physics: NeverScrollableScrollPhysics(),
+        ),
+        bottomNavigationBar: BottomBarWidget(
+          tabController: _tabController,
+          items: bottomBars,
+        ),
       ),
     );
   }

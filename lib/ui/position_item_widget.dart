@@ -1,6 +1,8 @@
 import 'dart:math';
 
+import 'package:bosszp/model/Appearance.dart';
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
 
 class PostionItemWidget extends StatelessWidget {
   const PostionItemWidget({
@@ -9,7 +11,7 @@ class PostionItemWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    var colorDark = Colors.black54;
+    final colorDark = context.read<Appearance>().darkColor;
     return Container(
       color: Color(0xFFF2F2F4),
       child: Card(
