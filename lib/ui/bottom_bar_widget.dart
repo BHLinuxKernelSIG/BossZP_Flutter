@@ -10,9 +10,7 @@ class BottomBarWidget extends StatelessWidget {
         bars = items
             .map((e) => BottomNavigationBarItem(
                 icon: Image.asset(
-                    width: 45,
-                    height: 45,
-                    "assets/images/webp/${e.$1}-dark.webp"),
+                    width: 45, height: 45, "assets/images/webp/${e.$1}.webp"),
                 label: "${e.$2}"))
             .toList();
 
