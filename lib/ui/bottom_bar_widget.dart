@@ -29,8 +29,8 @@ class BottomBarWidget extends StatelessWidget {
           currentIndex: _tabController.index,
           selectedItemColor: context.read<Appearance>().blueColor,
           unselectedItemColor: Color.fromARGB(255, 6, 5, 5),
-          selectedFontSize: 10,
-          unselectedFontSize: 10,
+          selectedFontSize: 12,
+          unselectedFontSize: 12,
           items: items,
         );
       }),
