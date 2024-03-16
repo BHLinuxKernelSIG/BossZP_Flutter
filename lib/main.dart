@@ -4,7 +4,6 @@ import 'package:bosszp/ui/message_list_widget.dart';
 import 'package:bosszp/ui/posotion_list_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-
 import 'ui/bottom_bar_widget.dart';
 
 void main() {
@@ -75,7 +74,7 @@ class _MyHomePageState extends State<MyHomePage>
                   icon: Image.asset(
                       width: iconSize,
                       height: iconSize,
-                      "assets/images/webp/${e.$1}.webp"),
+                      "assets/images/webp/${e.$1}-dark.webp"),
                   label: "${e.$2}"))
               .toList(),
         ),
