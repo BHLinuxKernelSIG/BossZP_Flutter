@@ -43,8 +43,8 @@ class _MyHomePageState extends State<MyHomePage>
   final List<(String, String, Widget)> pages = [
     ("zhiwei", "职位", PositionListWidget()),
     ("youle", "有了", Follow_List_Widget()),
-    ("xiaoxi", "消息", MessageListWidget()),
-    ("wode", "我的", Text("44"))
+    ("xiaoxi-b", "消息", MessageListWidget()),
+    ("wode-b", "我的", Text("44"))
   ];
 
   @override
@@ -72,9 +72,7 @@ class _MyHomePageState extends State<MyHomePage>
           items: pages
               .map((e) => BottomNavigationBarItem(
                   icon: Image.asset(
-                      width: 50,
-                      height: 50,
-                      "assets/images/webp/${e.$1}-dark.webp"),
+                      width: 50, height: 50, "assets/images/webp/${e.$1}.webp"),
                   label: "${e.$2}"))
               .toList(),
         ),
