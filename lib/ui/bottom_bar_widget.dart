@@ -3,12 +3,21 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
 class BottomBarWidget extends StatelessWidget {
-  final List<BottomNavigationBarItem> items;
-  const BottomBarWidget(
+  final List<(String, String)> items;
+  BottomBarWidget(
       {super.key, required TabController tabController, required this.items})
-      : _tabController = tabController;
+      : _tabController = tabController,
+        bars = items
+            .map((e) => BottomNavigationBarItem(
+                icon: Image.asset(
+                    width: 45,
+                    height: 45,
+                    "assets/images/webp/${e.$1}-dark.webp"),
+                label: "${e.$2}"))
+            .toList();
 
   final TabController _tabController;
+  final List<BottomNavigationBarItem> bars;
 
   @override
   Widget build(BuildContext context) {
@@ -31,7 +40,7 @@ class BottomBarWidget extends StatelessWidget {
           unselectedItemColor: Color.fromARGB(255, 6, 5, 5),
           selectedFontSize: 12,
           unselectedFontSize: 12,
-          items: items,
+          items: bars,
         );
       }),
     );

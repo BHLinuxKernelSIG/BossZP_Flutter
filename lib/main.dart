@@ -4,7 +4,7 @@ import 'package:bosszp/ui/message_list_widget.dart';
 import 'package:bosszp/ui/posotion_list_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'ui/bottom_bar_widget.dart';
+import 'package:bosszp/ui/bottom_bar_widget.dart';
 
 void main() {
   runApp(const MyApp());
@@ -69,14 +69,7 @@ class _MyHomePageState extends State<MyHomePage>
         ),
         bottomNavigationBar: BottomBarWidget(
           tabController: _tabController,
-          items: pages
-              .map((e) => BottomNavigationBarItem(
-                  icon: Image.asset(
-                      width: iconSize,
-                      height: iconSize,
-                      "assets/images/webp/${e.$1}-dark.webp"),
-                  label: "${e.$2}"))
-              .toList(),
+          items: pages.map((e) => (e.$1, e.$2)).toList(),
         ),
       ),
     );
