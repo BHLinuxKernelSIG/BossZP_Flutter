@@ -56,6 +56,7 @@ class _MyHomePageState extends State<MyHomePage>
 
   @override
   Widget build(BuildContext context) {
+    final iconSize = 45.0;
     return Provider<Appearance>(
       create: (context) => Appearance(),
       child: Scaffold(
@@ -72,7 +73,9 @@ class _MyHomePageState extends State<MyHomePage>
           items: pages
               .map((e) => BottomNavigationBarItem(
                   icon: Image.asset(
-                      width: 50, height: 50, "assets/images/webp/${e.$1}.webp"),
+                      width: iconSize,
+                      height: iconSize,
+                      "assets/images/webp/${e.$1}.webp"),
                   label: "${e.$2}"))
               .toList(),
         ),
