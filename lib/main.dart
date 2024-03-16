@@ -40,18 +40,11 @@ class _MyHomePageState extends State<MyHomePage>
     with SingleTickerProviderStateMixin {
   late final _tabController = TabController(length: pages.length, vsync: this);
 
-  final List<Widget> pages = [
-    PositionListWidget(),
-    Follow_List_Widget(),
-    MessageListWidget(),
-    Text("44")
-  ];
-  final List<BottomNavigationBarItem> bottomBars = [
-    BottomNavigationBarItem(icon: Icon(Icons.face_2_outlined), label: "职位"),
-    BottomNavigationBarItem(icon: Icon(Icons.ac_unit_rounded), label: "有了"),
-    BottomNavigationBarItem(
-        icon: Icon(Icons.baby_changing_station_outlined), label: "消息"),
-    BottomNavigationBarItem(icon: Icon(Icons.cabin_outlined), label: "我的")
+  final List<(String, String, Widget)> pages = [
+    ("zhiwei", "职位", PositionListWidget()),
+    ("youle", "有了", Follow_List_Widget()),
+    ("xiaoxi", "消息", MessageListWidget()),
+    ("wode", "我的", Text("44"))
   ];
 
   @override
@@ -71,12 +64,19 @@ class _MyHomePageState extends State<MyHomePage>
         ),
         body: TabBarView(
           controller: _tabController,
-          children: pages,
+          children: pages.map((e) => e.$3).toList(),
           physics: NeverScrollableScrollPhysics(),
         ),
         bottomNavigationBar: BottomBarWidget(
           tabController: _tabController,
-          items: bottomBars,
+          items: pages
+              .map((e) => BottomNavigationBarItem(
+                  icon: Image.asset(
+                      width: 50,
+                      height: 50,
+                      "assets/images/webp/${e.$1}-dark.webp"),
+                  label: "${e.$2}"))
+              .toList(),
         ),
       ),
     );
