@@ -19,7 +19,7 @@ class MessageItemWidget extends StatelessWidget {
               fit: BoxFit.cover,
               placeholder: (context, url) => const CircularProgressIndicator(),
               imageUrl:
-                  'https://pic1.zhimg.com/v2-4143b2f8dc88788df8ae311d2d1404f9_xll.jpg',
+                  'https://k.sinaimg.cn/n/sinakd20117/192/w1696h1696/20240131/3dd7-94af50d27027ceae9ccc3d13760a2f7c.jpg/w700d1q75cms.jpg',
             ),
           ),
           SizedBox(width: 12),

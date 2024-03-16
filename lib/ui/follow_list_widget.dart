@@ -7,7 +7,7 @@ class Follow_List_Widget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ListView.builder(
-      prototypeItem: Follow_Item_Widget(),
+      // prototypeItem: Follow_Item_Widget(),
       itemCount: 20,
       itemBuilder: (context, index) {
         return Follow_Item_Widget();
